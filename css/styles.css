@@ -81,7 +81,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightcyan;
 }
 
 .site-header-logo-link {
@@ -123,12 +122,8 @@ img {
 
 
 /* MAIN */
-.main-content {
-}
-.hero {
-}
 .hero-container {
-
+  margin-top: 20px;
 }
 
 .hero-heading-wrapper {
@@ -140,23 +135,34 @@ img {
 .hero-img {
   width: 250px;
   height: 300px;
+  margin-right: 50px;
   border-radius: 8px;
 }
 
 .hero-heading-info-wrapper {
+  display: flex;
   flex-direction: column;
+
 }
 
 .hero-title {
   display: block;
   font-weight: 700;
+  font-size: 50px;
   font-family: "Roboto", "Arial", sans-serif;
-  margin-bottom: 3px;
-  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.2;
   color: #000;
 }
 
 .hero-title-deck {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -165,8 +171,11 @@ img {
 }
 
 .hero-socials-list {
+  padding: 0;
   display: flex;
   list-style: none;
+  text-align: left;
+  align-items: center;
 }
 
 .hero-socials-item:not(:last-child) {
@@ -176,21 +185,73 @@ img {
 .hero-socials-link {
   text-decoration: none;
 }
-.hero-socials-img {
-}
-.hero-detail {
-}
+
+
+/* HER0-DETAIL */
 .hero-detail-terxt {
+  margin-top: 20;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+  color: rgba(0, 0, 0, 0.75);
+
 }
+
 .button-wrapper {
+  display: flex;
 }
+
 .button {
+  display: inline-block;
+  align-items: center;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
+
 .button-first {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 15px;
 }
+
+.button-first:hover {
+  opacity: 0.8;
+}
+
+.button-first:active {
+  opacity: 0.6;
+}
+
 .button-second {
+  border: 2px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
 }
+
+.button-second:hover {
+  color:  #007bff;
+  background-color:  #f0e9e9;
+}
+
+.button-second:active {
+  opacity: 0.8;
+  color:  #007bff;
+  background-color:  #f0e9e9;
+}
+
 .footer {
-}
-.footer-row {
+  margin-top: auto;
+  font-size: 16px;
+  text-align: center;
+
 }
