@@ -203,6 +203,19 @@ img {
   display: none;
 }
 
+.site-header--open .site-header__sitenav {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 32px;
+  top: 88px;
+  min-width: 223px;
+  max-width: calc(100% - 64px);
+  padding: 40px;
+  background-color: #33323d;
+}
+
+
 .site-header__toggler {
   display: block;
   width: 24px;
