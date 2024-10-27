@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sherzodbek's blog</title>
   <!-- LINKS -->
+    <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -13,26 +14,30 @@
   <!-- SITE-HEADER -->
   <header class="site-header">
     <div class="site-header-container container">
-      <a class="site-header-logo-link" href="index.html">Sherzodbek's Blog</a>
+      <a class="site-header-logo-link logo site-header__logo" href="#">Sherzodbek's Blog</a>
 
 
       <!-- SITENAV -->
-      <nav class="sitenav">
-        <ul class="sitenav-list">
-          <li class="sitenav-item"><a class="sitenav-link" href="portfolio.html">My Portfolio</a>
+      <nav class="site-header__sitenav sitenav sitenav--site-header site-header--open">
+        <ul class="sitenav__list">
+          <li class="sitenav__item sitenav__item--active"><a class="sitenav-link" href="portfolio.html">My Portfolio</a>
           </li>
-          <li class="sitenav-item"><a class="sitenav-link" href="#">Lessons</a>
+          <!-- <li class="sitenav-item"><a class="sitenav-link" href="#">Lessons</a>
+          </li> -->
+          <li class="sitenav__item"><a class="sitenav-link" href="#">Blog</a>
           </li>
-          <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a>
+          <li class="sitenav__item"><a class="sitenav-link" href="#">Talks</a>
           </li>
-          <li class="sitenav-item"><a class="sitenav-link" href="#">Talks</a>
-          </li>
-          <li class="sitenav-item"><a class="sitenav-link" href="aboutMe.html">About Me</a>
+          <li class="sitenav__item"><a class="sitenav-link" href="aboutMe.html">About Me</a>
           </li>
         </ul>
       </nav>
+
+      <button class="site-header__toggler" type="button" aria-label="Menu"></button>
     </div>
   </header>
+
+  <!-- HERO -->
 
   <div class="main-page-about-me">
     <div class="container about-me-container ">
@@ -87,8 +92,10 @@
 
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-row">© 2024 SherzodbekJamolov.com</div>
-    </div>
-  </footer>
+  <div class="container">
+    <footer class="site-footer">
+      <div class="site-footer__container container">
+        <div class="footer-row">© 2024 SherzodbekJamolov.com</div>
+      </div>
+    </footer>
+  </div>
