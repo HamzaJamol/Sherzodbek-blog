@@ -234,8 +234,7 @@ img {
 
 .hero-heading-wrapper {
   display: flex;
-  align-items: center;
-
+  flex-wrap: wrap;
 }
 
 .hero-img {
